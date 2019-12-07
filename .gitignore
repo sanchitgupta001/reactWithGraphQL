@@ -1,2 +1,17 @@
 node_modules
-.DS_STORE
+npm-debug*
+package-lock.json
+yarn.lock
+.env
+yarn-error.log
+
+# Lerna
+lerna-debug.log
+
+# Compiled files
+build/
+.idea
+.vscode
+
+# OS Files
+.DS_Store
