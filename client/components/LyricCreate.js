@@ -39,12 +39,15 @@ class LyricCreate extends Component {
   }
 }
 
+/* ids can be used here to tell apollo client that respective component using that date might be updated if the id is changed */
 const mutation = gql`
   mutation AddLyricToSong($content: String, $songId: ID) {
     addLyricToSong(content: $content, songId: $songId) {
       id
       lyrics {
+        id
         content
+        likes
       }
     }
   }
